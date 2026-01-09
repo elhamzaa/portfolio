@@ -21,7 +21,7 @@ const config = {
         {
             title: "Food Delivery Service Analysis",
             description: "Analyzes delivery data to identify the root causes of delays and provide insights for improving service quality and profitability.",
-            image: "https://placehold.co/600x400/4B3621/F5F5DC?text=Coffee+App",
+            image: "https://placehold.co/600x400/4B3621/F5F5DC?text=Analysis",
             link: "#",
             tags: ["Data Analysis & Visualization", "Machine Learning", "R Shiny App"]
         },
