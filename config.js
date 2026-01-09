@@ -13,7 +13,7 @@ const config = {
         { icon: "fa-github", link: "https://github.com", label: "GitHub" },
         { icon: "fa-linkedin", link: "https://linkedin.com", label: "LinkedIn" },
         { icon: "fa-instagram", link: "https://instagram.com", label: "Instagram" },
-        { icon: "fa-envelope", link: "mailto:email@example.com", label: "Email" }
+        { icon: "fa-envelope", link: "mailto:h.hassan5971@gmail.com", label: "Email" }
     ],
 
     // Projects
