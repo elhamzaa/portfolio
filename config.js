@@ -19,26 +19,12 @@ const config = {
     // Projects
     projects: [
         {
-            title: "Coffee Shop App",
-            description: "A mobile-first progressive web app for ordering artisan coffee.",
+            title: "Food Delivery Service Analysis",
+            description: "Analyzes delivery data to identify the root causes of delays and provide insights for improving service quality and profitability.",
             image: "https://placehold.co/600x400/4B3621/F5F5DC?text=Coffee+App",
             link: "#",
-            tags: ["React", "Firebase", "PWA"]
+            tags: ["Data Analysis & Visualization", "Machine Learning", "R Shiny App"]
         },
-        {
-            title: "Portfolio v1",
-            description: "My first personal portfolio website focused on minimalism.",
-            image: "https://placehold.co/600x400/6F4E37/F5F5DC?text=Portfolio",
-            link: "#",
-            tags: ["HTML", "CSS", "JS"]
-        },
-        {
-            title: "E-Commerce Dashboard",
-            description: "Admin dashboard for managing inventory and sales analytics.",
-            image: "https://placehold.co/600x400/2C1810/F5F5DC?text=Dashboard",
-            link: "#",
-            tags: ["Vue.js", "Node.js", "MongoDB"]
-        }
     ],
 
     // Theme Colors (Optional override)
