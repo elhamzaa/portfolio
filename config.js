@@ -3,7 +3,7 @@ const config = {
     profile: {
         name: "Hamza Hassan",
         role: "AI Engineer",
-        bio: "I build responsive, high-performance web applications with a focus on aesthetics and user experience.",
+        bio: "meow",
         cvLink: "#", // Add your CV link here (e.g. /resume.pdf)
         avatar: "https://api.dicebear.com/7.x/miniavs/svg?seed=coffee" // Placeholder image
     },
