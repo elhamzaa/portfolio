@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-bean bg-bean-1"></div>
+    <div class="bg-bean bg-bean-2"></div>
+    <div class="bg-bean bg-bean-3"></div>
+
+    <nav>
+        <div class="logo">Portfolio.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <div class="profile-img-container" data-aos="fade-right" data-aos-duration="1200">
+                <img id="profile-img" src="" alt="Profile Picture">
+            </div>
+            <div class="hero-text-container">
+                <h1 id="profile-name" data-aos="fade-down" data-aos-delay="200"></h1>
+                <h2 id="profile-role" data-aos="fade-up" data-aos-delay="400"></h2>
+                <p id="profile-bio" data-aos="fade-up" data-aos-delay="600"></p>
+                <div class="social-links" id="social-links-container" data-aos="fade-up" data-aos-delay="800">
+                    <!-- Social links injected here -->
+                </div>
+                <div class="buttons-container" data-aos="zoom-in" data-aos-delay="600">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#" id="btn-cv" class="btn-secondary">Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects">
+        <div class="section-title" data-aos="fade-right">
+            <h2>Select Projects</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+            <!-- Projects injected here -->
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Let's Connect</h3>
+            <p>Interested in working together? Reach out!</p>
+            <div class="social-links" id="footer-socials">
+                <!-- Social links injected here -->
+            </div>
+            <p class="copyright">&copy; 2026 Crafted with <i class="fa-solid fa-coffee"></i> by Me.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
