@@ -5,7 +5,7 @@ const config = {
         role: "AI Engineer",
         bio: "meow",
         cvLink: "#", // Add your CV link here (e.g. /resume.pdf)
-        avatar: "https://api.dicebear.com/7.x/miniavs/svg?seed=coffee" // Placeholder image
+        avatar: "https://i.ibb.co/NgJpq22Y/Picsart-25-11-17-15-25-09-800-2.jpg" // Placeholder image
     },
 
     // Social Links
@@ -23,7 +23,7 @@ const config = {
             description: "Analyzes delivery data to identify the root causes of delays and provide insights for improving service quality and profitability.",
             image: "https://placehold.co/600x400/4B3621/F5F5DC?text=Analysis",
             link: "#",
-            tags: ["Data Analysis & Visualization", "Machine Learning", "R Shiny App"]
+            tags: ["Data Analysis & Visualization", "Machin e Learning", "R Shiny App"]
         },
     ],
 
