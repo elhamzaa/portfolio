@@ -41,13 +41,35 @@ body {
 }
 
 /* Background Animations */
-.bg-bean {
+/* Background Animations */
+.bg-bean,
+.bg-shape,
+.bg-shape-square {
     position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bg-bean {
     background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
     opacity: 0.1;
     border-radius: 50%;
-    z-index: -1;
     animation: float 20s infinite ease-in-out;
+}
+
+.bg-shape {
+    background: var(--secondary);
+    opacity: 0.05;
+    border-radius: 50%;
+    animation: float-random 25s infinite linear;
+}
+
+.bg-shape-square {
+    background: transparent;
+    border: 2px solid var(--primary);
+    opacity: 0.05;
+    transform: rotate(45deg);
+    animation: float-rotate 30s infinite linear;
 }
 
 .bg-bean-1 {
@@ -65,13 +87,54 @@ body {
     animation-delay: -5s;
 }
 
-.bg-bean-3 {
+.bg-shape-1 {
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 10%;
+    animation-duration: 35s;
+}
+
+.bg-shape-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 20%;
+    animation-duration: 28s;
+    animation-delay: -2s;
+}
+
+.bg-shape-3 {
     width: 300px;
     height: 300px;
+    bottom: -50px;
+    left: 40%;
+    animation-duration: 40s;
+    opacity: 0.03;
+}
+
+.bg-shape-4 {
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    right: 10%;
+    animation-duration: 20s;
+}
+
+.bg-square-1 {
+    width: 120px;
+    height: 120px;
     top: 40%;
-    left: 30%;
-    opacity: 0.05;
-    animation-delay: -10s;
+    left: 80%;
+    animation-delay: -8s;
+}
+
+.bg-square-2 {
+    width: 80px;
+    height: 80px;
+    top: 80%;
+    left: 15%;
+    animation-duration: 25s;
 }
 
 @keyframes float {
@@ -83,6 +146,42 @@ body {
 
     50% {
         transform: translate(30px, -50px) scale(1.1);
+    }
+}
+
+@keyframes float-random {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(50px, 50px);
+    }
+
+    50% {
+        transform: translate(0, 100px);
+    }
+
+    75% {
+        transform: translate(-50px, 50px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes float-rotate {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    50% {
+        transform: rotate(180deg) translate(20px, 20px);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(0, 0);
     }
 }
 
@@ -468,5 +567,13 @@ footer .social-links {
     /* Could add hamburger menu later */
     nav {
         justify-content: center;
+    }
+
+    /* Reduce background distraction on mobile */
+    .bg-bean,
+    .bg-shape,
+    .bg-shape-square {
+        opacity: 0.05;
+        transform: scale(0.7);
     }
 }

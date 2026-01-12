@@ -77,12 +77,10 @@ function loadContent() {
             return a;
         };
 
-        const headerSocials = document.getElementById('social-links-container');
         const footerSocials = document.getElementById('footer-socials');
 
         config.socials.forEach(social => {
-            headerSocials.appendChild(createSocialLink(social));
-            footerSocials.appendChild(createSocialLink(social)); // Clone for footer
+            footerSocials.appendChild(createSocialLink(social));
         });
     }
 
