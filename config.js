@@ -16,6 +16,11 @@ const config = {
         { icon: "fa-envelope", link: "mailto:h.hassan5971@gmail.com", label: "Email" }
     ],
 
+    // Skills
+    skills: [
+        "Python", "JavaScript", "HTML5", "CSS3", "React", "Git", "TensorFlow", "SQL"
+    ],
+
     // Projects
     projects: [
         {

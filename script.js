@@ -84,6 +84,19 @@ function loadContent() {
         });
     }
 
+    // Load Skills
+    if (config.skills && document.getElementById('skills-container')) {
+        const skillsContainer = document.getElementById('skills-container');
+        config.skills.forEach((skill, index) => {
+            const skillTag = document.createElement('span');
+            skillTag.className = 'skill-tag';
+            skillTag.textContent = skill;
+            skillTag.setAttribute('data-aos', 'zoom-in');
+            skillTag.setAttribute('data-aos-delay', index * 50);
+            skillsContainer.appendChild(skillTag);
+        });
+    }
+
     // Load Projects
     if (config.projects) {
         const projectsGrid = document.getElementById('projects-grid');
