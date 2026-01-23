@@ -11,9 +11,9 @@ const config = {
 
     // Social Links
     socials: [
-        { icon: "fa-github", link: "https://github.com", label: "GitHub" },
-        { icon: "fa-linkedin", link: "https://linkedin.com", label: "LinkedIn" },
-        { icon: "fa-instagram", link: "https://instagram.com", label: "Instagram" },
+        { icon: "fa-github", link: "https://github.com/elhamzaa", label: "GitHub" },
+        { icon: "fa-linkedin", link: "https://www.linkedin.com/in/hamza-hassan-5bb65a218/", label: "LinkedIn" },
+        { icon: "fa-instagram", link: "https://www.instagram.com/0w.k0/", label: "Instagram" },
         { icon: "fa-envelope", link: "mailto:h.hassan5971@gmail.com", label: "Email" }
     ],
 
