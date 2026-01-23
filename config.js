@@ -15,7 +15,7 @@ const config = {
         { icon: "fa-linkedin", link: "https://www.linkedin.com/in/hamza-hassan-5bb65a218/", label: "LinkedIn" },
         { icon: "fa-instagram", link: "https://www.instagram.com/0w.k0/", label: "Instagram" },
         { icon: "fa-envelope", link: "mailto:h.hassan5971@gmail.com", label: "Email" },
-        { icon: "fa-youtube", link: "#", label: "YouTube" }
+        { icon: "fa-youtube", link: "https://www.youtube.com/@HamzaLabs", label: "YouTube" }
     ],
 
     // Skills
