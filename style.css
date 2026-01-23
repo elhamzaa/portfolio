@@ -15,26 +15,20 @@
     font-family: 'Outfit', sans-serif;
 }
 
-html {
+html,
+body {
+    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: auto;
-    max-width: 100%;
-    width: 100%;
     position: relative;
     background-color: var(--background);
     color: var(--text);
     padding-bottom: 70px;
     /* Space for bottom nav */
-}
-
-body {
-    background-color: var(--background);
-    color: var(--text);
 }
 
 /* Scrollbar */
