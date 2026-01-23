@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     loadContent();
     setupNavigation();
-    initMatrixEffect(); // Start Matrix Effect
 
     // Refresh AOS after content load
     setTimeout(() => {
