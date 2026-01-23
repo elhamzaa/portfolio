@@ -30,12 +30,7 @@ const config = {
             period: "2023 - Present",
             description: "Leading the frontend team and Architecting scalable web solutions."
         },
-        {
-            company: "Creative Studio",
-            role: "Web Developer",
-            period: "2021 - 2023",
-            description: "Developed award-winning websites for various clients using modern technologies."
-        }
+
     ],
 
     // Projects
