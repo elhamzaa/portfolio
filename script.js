@@ -100,6 +100,26 @@ function loadContent() {
         });
     }
 
+    // Load Experience
+    if (config.experience && document.getElementById('experience-container')) {
+        const expContainer = document.getElementById('experience-container');
+        config.experience.forEach((exp, index) => {
+            const card = document.createElement('div');
+            card.className = 'experience-card';
+            card.setAttribute('data-aos', 'fade-up');
+            card.setAttribute('data-aos-delay', index * 100);
+
+            card.innerHTML = `
+                <span class="exp-date">${exp.period}</span>
+                <h3 class="exp-role">${exp.role}</h3>
+                <div class="exp-company">${exp.company}</div>
+                <p class="exp-desc">${exp.description}</p>
+            `;
+
+            expContainer.appendChild(card);
+        });
+    }
+
     // Load Projects
     if (config.projects) {
         const projectsGrid = document.getElementById('projects-grid');

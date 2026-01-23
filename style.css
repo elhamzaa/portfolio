@@ -424,13 +424,91 @@ h2 {
     border-radius: 50px;
     cursor: default;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .skill-tag:hover {
     background: var(--primary);
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(111, 78, 55, 0.4);
+}
+
+/* Experience */
+.experience-section {
+    padding: 60px 5%;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.experience-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: rgba(111, 78, 55, 0.3);
+}
+
+.experience-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(245, 245, 220, 0.05);
+    position: relative;
+    margin-left: 20px;
+    transition: transform 0.3s;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    left: -56px;
+    top: 25px;
+    width: 12px;
+    height: 12px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(44, 24, 16, 1);
+}
+
+.experience-card:hover {
+    transform: translateX(10px);
+    border-color: rgba(111, 78, 55, 0.5);
+}
+
+.exp-date {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.exp-role {
+    color: var(--accent);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.exp-company {
+    color: #a1887f;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.exp-desc {
+    color: #d7ccc8;
+    line-height: 1.6;
 }
 
 /* Projects */
@@ -607,5 +685,22 @@ footer .social-links {
     .bg-shape-square {
         opacity: 0.05;
         transform: scale(0.7);
+    }
+
+    /* Simplify Experience on Mobile */
+    .experience-container {
+        padding-left: 0;
+    }
+
+    .experience-container::before {
+        display: none;
+    }
+
+    .experience-card {
+        margin-left: 0;
+    }
+
+    .experience-card::before {
+        display: none;
     }
 }
