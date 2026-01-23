@@ -15,12 +15,21 @@
     font-family: 'Outfit', sans-serif;
 }
 
-html,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     overflow-x: hidden;
+    overflow-y: auto;
     max-width: 100%;
     width: 100%;
     position: relative;
+    background-color: var(--background);
+    color: var(--text);
+    padding-bottom: 70px;
+    /* Space for bottom nav */
 }
 
 body {
@@ -694,13 +703,44 @@ footer .social-links {
         font-size: 2.5rem;
     }
 
-    .nav-links {
+    /* Mobile Navigation (Bottom Bar) */
+    nav {
+        top: auto;
+        bottom: 0;
+        border-bottom: none;
+        border-top: 1px solid rgba(245, 245, 220, 0.1);
+        padding: 15px 0;
+        background: rgba(44, 24, 16, 0.98);
+        justify-content: center;
+    }
+
+    .logo {
         display: none;
     }
 
-    /* Could add hamburger menu later */
-    nav {
+    .nav-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li {
+        flex: 1;
+        display: flex;
         justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        width: 100%;
     }
 
     /* Reduce background distraction on mobile */
