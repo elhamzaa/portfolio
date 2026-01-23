@@ -5,7 +5,7 @@ const config = {
         role: "AI Engineer",
         bio: "meow",
         cvLink: "#", // Add your CV link here (e.g. /resume.pdf)
-        avatar: "https://i.ibb.co/cSK1wxhx/Gemini-Generated-Image-q6jnahq6jnahq6jn.png" // Placeholder image
+        avatar: "https://i.ibb.co/C3fNgSSk/Beauty-Plus-OBJECT-REMOVER-1769110307952-jpg-1.jpg" // Placeholder image
     },
 
     // Social Links
