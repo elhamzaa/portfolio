@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     loadContent();
     setupNavigation();
+    initMatrixEffect(); // Start Matrix Effect
 
     // Refresh AOS after content load
     setTimeout(() => {
@@ -162,4 +163,53 @@ function loadContent() {
         if (config.theme.accent) root.style.setProperty('--accent', config.theme.accent);
         if (config.theme.background) root.style.setProperty('--background', config.theme.background);
     }
+}
+
+function initMatrixEffect() {
+    const canvas = document.getElementById('binary-canvas');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let width, height;
+
+    const resize = () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    };
+
+    window.addEventListener('resize', resize);
+    resize();
+
+    const fontSize = 14;
+    const columns = Math.floor(width / fontSize);
+    const drops = new Array(columns).fill(1); // Y position of drops
+
+    // Characters to use (Binary + Hex + Techy stuff)
+    const chars = "0101010101ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    function draw() {
+        // Transparent black background to create trail effect
+        // Use theme background color but with very low opacity
+        ctx.fillStyle = 'rgba(26, 21, 17, 0.05)';
+        ctx.fillRect(0, 0, width, height);
+
+        ctx.fillStyle = '#6F4E37'; // Text Color (Primary Theme Color)
+        ctx.font = `${fontSize}px monospace`;
+
+        for (let i = 0; i < drops.length; i++) {
+            const text = chars.charAt(Math.floor(Math.random() * chars.length));
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+            // Reset drop to top randomly after it has crossed screen
+            // or randomly to create variation
+            if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+
+            drops[i]++;
+        }
+        requestAnimationFrame(draw);
+    }
+
+    draw();
 }
