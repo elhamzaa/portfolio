@@ -691,6 +691,11 @@ footer .social-links {
         gap: 40px;
     }
 
+    body {
+        padding-bottom: 70px;
+        /* Space for bottom nav only on mobile */
+    }
+
     .hero-text-container {
         text-align: center;
     }
