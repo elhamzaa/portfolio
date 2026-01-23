@@ -51,13 +51,22 @@ body {
 }
 
 /* Background Animations */
-/* Background Animations */
+#background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+}
 
 .bg-bean,
 .bg-shape,
 .bg-shape-square {
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; redundant but ok */
     pointer-events: none;
 }
 
