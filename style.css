@@ -23,12 +23,13 @@ html {
 body {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
     position: relative;
     background-color: var(--background);
     color: var(--text);
     padding-bottom: 70px;
     /* Space for bottom nav */
+    margin: 0;
+    /* Ensuring no margin causes spill */
 }
 
 /* Scrollbar */
