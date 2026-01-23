@@ -58,6 +58,11 @@ function loadContent() {
         } else {
             cvBtn.style.display = 'none';
         }
+
+        // About Text
+        if (config.profile.about && document.getElementById('about-text')) {
+            document.getElementById('about-text').textContent = config.profile.about;
+        }
     }
 
     // Load Socials (Header & Footer)

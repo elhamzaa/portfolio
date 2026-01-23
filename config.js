@@ -5,7 +5,8 @@ const config = {
         role: "AI Engineer",
         bio: "meow",
         cvLink: "#", // Add your CV link here (e.g. /resume.pdf)
-        avatar: "https://i.ibb.co/C3fNgSSk/Beauty-Plus-OBJECT-REMOVER-1769110307952-jpg-1.jpg" // Placeholder image
+        avatar: "https://i.ibb.co/C3fNgSSk/Beauty-Plus-OBJECT-REMOVER-1769110307952-jpg-1.jpg", // Placeholder image
+        about: "I am a passionate developer with a strong foundation in AI and web technologies. My journey began with a curiosity for how things work, leading me to explore the depths of machine learning and full-stack development. I love building tools that solve real-world problems and creating digital experiences that leave a lasting impact."
     },
 
     // Social Links
