@@ -257,7 +257,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 100px 5%;
-    overflow: hidden;
+    /* overflow: hidden; Removed to fix mobile scroll */
 }
 
 .hero-content {
