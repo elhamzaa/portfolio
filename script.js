@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize AOS
-    AOS.init({
-        once: true,
-        offset: 50,
-        duration: 800,
-    });
-
     loadContent();
     setupNavigation();
+
+    // Refresh AOS after content load
+    setTimeout(() => {
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+        });
+        AOS.refresh();
+    }, 500);
 });
 
 function setupNavigation() {
